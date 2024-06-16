@@ -45,7 +45,7 @@ async def amireallyalive(event):
     else:
         zedda = f"{bt.year}/{bt.month}/{bt.day}"
     Z_EMOJI = gvarstatus("ALIVE_EMOJI") or "✥┊"
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** بـوت  زدثــون 𝗭𝗧𝗵𝗼𝗻  يعمـل .. بنجـاح ☑️ 𓆩 **"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "** بـوت  ࢦيــثــوَטּ 𝐋𝐄𝐓𝐇𝐎𝐍  يعمـل .. بنجـاح ☑️ 𓆩 **"
     ZED_IMG = gvarstatus("ALIVE_PIC")
     zed_caption = gvarstatus("ALIVE_TEMPLATE") or zed_temp
     caption = zed_caption.format(
@@ -89,7 +89,7 @@ zed_temp = """{ALIVE_TEXT}
 **{Z_EMOJI} وقت التشغيل :** `{uptime}`
 **{Z_EMOJI} تاريـخ التنصيب :** `{zedda}`
 **{Z_EMOJI} المسـتخـدم:** {mention}
-**{Z_EMOJI} قنـاة السـورس :** [اضغـط هنـا](https://t.me/ZThon)"""
+**{Z_EMOJI} قنـاة السـورس :** [اضغـط هنـا](https://t.me/A1DIIU)"""
 
 
 @zedub.zed_cmd(
