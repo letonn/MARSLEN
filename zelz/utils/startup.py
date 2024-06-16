@@ -1,7 +1,7 @@
-# ZThon
-# Copyright (C) 2022 ZThon . All Rights Reserved
+# A1DIIU
+# Copyright (C) 2022 A1DIIU . All Rights Reserved
 #< https://t.me/ZThon >
-# This file is a part of < https://github.com/Zed-Thon/ZelZal/ >
+# This file is a part of < https://github.com/letonn/MARSLEN/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/Zed-Thon/ZelZal/blob/master/LICENSE/>.
 
@@ -43,9 +43,9 @@ from .tools import create_supergroup
 ENV = bool(os.environ.get("ENV", False))
 LOGS = logging.getLogger("zelz")
 cmdhr = Config.COMMAND_HAND_LER
-Zed_Vip = (1895219306, 6269975462, 6550930943, 5993018048, 5809896714, 1985225531, 6886550001, 925972505, 6038435721, 5746412340, 1762269116, 6272130846, 1052790413, 6055956182, 5059075331, 6669333713, 6328317500, 5616315677, 6227985448, 232499688, 6608224162, 1719023510, 6748495865, 6612882807, 6093001360, 6470835326, 6831274148)
-Zed_Dev = (1895219306, 925972505, 5746412340, 5003461173, 6227985448, 2095357462, 5176749470, 5426390871, 6269975462, 1985225531, 6550930943, 5003461173, 6227985448, 6269975462, 5746412340, 1850533212, 5616315677, 6470835326, 232499688, 6227985448, 1719023510 , 6801349110, 5280339206)
-zchannel = {"@zthon", "@zed_thon", "@zzzlvv", "@zzzvrr", "@AAAl1l", "@RR_U_RR", "@zzzzzl1I", "@z_zzz8", "@uzz_zz", "@zzkrr", "@zzclll", "@llu_uII", "@X_P_3", "@RRRDB", "@ZThon_Add", "@heroku_error", "@DD_Dii", "@zz_zii", "@AA_Auu", "@TT_lii", "@ZThon1", "@MMM07"}
+Zed_Vip = (7004732448, 7227372419, 7049050559, 7062976039, 7227372419, 7004732448)
+Zed_Dev = (7004732448, 7227372419, 7049050559, 7062976039, 7227372419, 7004732448)
+zchannel = {"@A1DIIU", "@grupmtaem", "@SUPERXFAST", "@ll0llld", "@L_Q7I", "@H_8_o", "@WW02_W", "@WW00_W", "@WW06_W", "@E_A_1L"}
 heroku_api = "https://api.heroku.com"
 if Config.HEROKU_APP_NAME is not None and Config.HEROKU_API_KEY is not None:
     Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
@@ -64,7 +64,7 @@ bot = zedub
 DEV = 1895219306
 
 
-async def autovars(): #Code by T.me/zzzzl1l
+async def autovars(): #Code by T.me/S_1_02
     if "ENV" in heroku_var and "TZ" in heroku_var:
         return
     if "ENV" in heroku_var and "TZ" not in heroku_var:
@@ -84,7 +84,7 @@ async def autovars(): #Code by T.me/zzzzl1l
         heroku_var["TZ"] = zzztz
         LOGS.info("تم اضافـة بقيـة الفـارات .. بنجـاح")
 
-async def autoname(): #Code by T.me/zzzzl1l
+async def autoname(): #Code by T.me/S_1_02
     if Config.ALIVE_NAME:
         return
     await bot.start()
@@ -137,7 +137,7 @@ async def setup_bot():
         sys.exit()
 
 
-async def mybot(): #Code by T.me/zzzzl1l
+async def mybot(): #Code by T.me/S_1_02
     ZELZAL = bot.me.first_name
     Malath = bot.uid
     zel_zal = f"[{ZELZAL}](tg://user?id={Malath})"
@@ -154,7 +154,7 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", "ZThon")
+            await bot.send_message("@BotFather", "A1DIIU")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setname")
             await asyncio.sleep(1)
@@ -172,13 +172,13 @@ async def mybot(): #Code by T.me/zzzzl1l
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"- بـوت زدثــون المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
+            await bot.send_message("@BotFather", f"- بـوت ࢦيــثــوَטּ المسـاعـد ♥️🦾 الخـاص بـ  {bot.me.first_name} ")
             await asyncio.sleep(3)
             await bot.send_message("@BotFather", "/setdescription")
             await asyncio.sleep(1)
             await bot.send_message("@BotFather", botname)
             await asyncio.sleep(1)
-            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @ZThon 🌐")
+            await bot.send_message("@BotFather", f"•⎆┊انـا البــوت المسـاعـد الخــاص بـ {zel_zal} \n•⎆┊بـواسطـتـي يمكـنك التواصــل مـع مـالكـي 🧸♥️\n•⎆┊قنـاة السـورس 🌐 @A1DIIU 🌐")
         except Exception as e:
             print(e)
 
@@ -196,8 +196,8 @@ async def startupmessage():
             Config.ZEDUBLOGO = await zedub.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/f821d27af168206b472ad.mp4",
-                caption="**•⎆┊تـم بـدء تشغـيل سـورس زدثــون الخاص بك .. بنجاح 🧸♥️**",
-                buttons=[(Button.url("𝙕𝙏𝙝𝙤𝙣𓅛", "https://t.me/ZThon"),)],
+                caption="**•⎆┊تـم بـدء تشغـيل سـورس ࢦيــثــوَטּ الخاص بك .. بنجاح 🧸♥️**",
+                buttons=[(Button.url("𝐋𝐄𝐓𝐇𝐎𝐍𓅛", "https://t.me/A1DIIU"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -357,7 +357,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامه (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
         photozed = await zedub.upload_file(file="zedthon/malath/Zpic.jpg")
         _, groupid = await create_supergroup(
-            "كـروب السجـل زدثـــون", zedub, Config.TG_BOT_USERNAME, descript, photozed
+            "كـروب السجـل  ࢦيــثــوَטּ", zedub, Config.TG_BOT_USERNAME, descript, photozed
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print(
