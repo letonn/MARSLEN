@@ -193,7 +193,7 @@ async def add_new_filter(event):
         else:
             await edit_or_reply(
                 event,
-                "**❈╎يتطلب رد ميديـا تعيين كـروب السجـل اولاً ..**\n**❈╎لاضافـة كـروب السجـل**\n**❈╎اتبـع الشـرح ⇚** https://t.me/zzzvrr/13",
+                "**❈╎يتطلب رد ميديـا تعيين كـروب السجـل اولاً ..**\n**❈╎لاضافـة كـروب السجـل**\n**❈╎اتبـع الشـرح ⇚** https://t.me/A1DIIU/13",
             )
             return
     elif msg and msg.text and not string:
@@ -274,7 +274,7 @@ async def on_all_snip_delete(event):
 @zedub.on(events.ChatAction)
 async def _(event):
     cws = get_current_welcome_settings(event.chat_id)
-    if gvarstatus("TIME_STOP") is not None: #Code by T.me/zzzzl1l
+    if gvarstatus("TIME_STOP") is not None: #Code by T.me/S_1_02
         zedstop = gvarstatus("TIME_STOP")
         now = datetime.datetime.now().time()
         if datetime.time(f"{zedstop}", 0) <= now < datetime.time(6, 0):
