@@ -198,9 +198,9 @@ async def purge_to(event):
 @zedub.zed_cmd(pattern="حذف رسائلي")
 async def purgeme(event):
     message = event.text
-    if message: #Code by T.me/zzzzl1l
+    if message: #Code by T.me/S_1_02
         count = int(message[12:])
-    else: #Code by T.me/zzzzl1l
+    else: #Code by T.me/S_1_02
         count = int(10000)
     i = 1
     async for message in event.client.iter_messages(event.chat_id, from_user="me"):
