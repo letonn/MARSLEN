@@ -35,7 +35,7 @@ plugin_category = "الخدمات"
 UNSPAM = gvarstatus("Z_UNSPAM") or "ايقاف البلاغ"
 
 
-# code by t.me/zzzzl1l
+# code by t.me/S_1_02
 async def spam_abusezed(event, sandy, zed, sleeptimem, sleeptimet, DelaySpam=False):
     # sourcery no-metrics
     counter = int(zed[0])
@@ -58,7 +58,7 @@ async def spam_abusezed(event, sandy, zed, sleeptimem, sleeptimet, DelaySpam=Fal
             await asyncio.sleep(4)
     else:
         return
-    if DelaySpam is not True: # code by t.me/zzzzl1l
+    if DelaySpam is not True: # code by t.me/S_1_02
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID,
@@ -78,7 +78,7 @@ async def spam_abusezed(event, sandy, zed, sleeptimem, sleeptimet, DelaySpam=Fal
         await event.client.send_message(event.chat_id, f"**- بلاغـات_ داخليـه 🚸\n- تم تنفيـذ تڪـرار البـلاغـات بنجاح ☑️\n- لـ الدعـم**  [Abuse Notifications ⚠️](tg://user?id=4245000) .\n**- عـدد البلاغـات :** {counter} **مـرات\n- كليشـة البلاغـات :**\n `{spam_message}`")
 
 
-# code by t.me/zzzzl1l
+# code by t.me/S_1_02
 @zedub.zed_cmd(pattern="بلاغ ([\s\S]*)")
 async def spammer(event):
     sandy = await event.get_reply_message()
@@ -100,7 +100,7 @@ async def spammer(event):
     await spam_abusezed(event, sandy, zed, sleeptimem, sleeptimet)
 
 
-# code by t.me/zzzzl1l
+# code by t.me/S_1_02
 @zedub.zed_cmd(pattern=f"{UNSPAM} ?(.*)",)
 async def spammer(event):
     if gvarstatus("spamwork") is not None and gvarstatus("spamwork") == "true":
