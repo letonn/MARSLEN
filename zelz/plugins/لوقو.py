@@ -15,7 +15,7 @@ Write file by Zelzal t.me/zzzzl1l
 import os
 import random
 import string
-try: # code by t.me/zzzzl1l
+try: # code by t.me/S_1_02
     import arabic_reshaper
 except ModuleNotFoundError:
     os.system("pip3 install arabic_reshaper")
@@ -36,7 +36,7 @@ LOGS = logging.getLogger(__name__)
 PICS_STR = []
 
 
-# code by t.me/zzzzl1l
+# code by t.me/S_1_02
 async def get_font_file(client, channel_id):
     font_file_message_s = await client.get_messages(
         entity=channel_id,
@@ -55,7 +55,7 @@ async def lg1(userevent):
     me = await userevent.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    if gvarstatus("ZED_FONTS") is None: # code by t.me/zzzzl1l
+    if gvarstatus("ZED_FONTS") is None: # code by t.me/S_1_02
         zed_font = await get_font_file(userevent.client, "@T_Taiz")
     else:
         zed_font = gvarstatus("ZED_FONTS")
@@ -76,7 +76,7 @@ async def lg1(userevent):
     arabic_text = "".join(
         char for char in text if char.isalpha() and char not in string.ascii_letters
     )
-    if arabic_text: # code by t.me/zzzzl1l
+    if arabic_text: # code by t.me/S_1_02
         await eor(event, "**- الرجاء إدخال نص باللغـة الانجليـزية فقـط.**\n`.لوكو` + **نص انكـلش**\n`.لوقو` + **نص عـربـي**")
         return
     if len(text) <= 8:
@@ -123,21 +123,21 @@ async def lg1(userevent):
 
 
 
-# code by t.me/zzzzl1l
+# code by t.me/S_1_02
 @zedub.zed_cmd(pattern=r"لوقو ?(.*)")
 async def lg1(userevent):
     event = await eor(userevent, "**- جـارِ صنـع لـوقـو عـربـي بحقـوقك ...**")
     me = await userevent.client.get_me()
     my_first = me.first_name
     my_mention = f"[{me.first_name}](tg://user?id={me.id})"
-    if gvarstatus("ZED_FONTS") is None: # code by t.me/zzzzl1l
-        zed_font = await get_font_file(userevent.client, "@S_SSQ")
-    else: # code by t.me/zzzzl1l
+    if gvarstatus("ZED_FONTS") is None: # code by t.me/S_1_02
+        zed_font = await get_font_file(userevent.client, "@aalshjs")
+    else: # code by t.me/S_1_02
         zed_font = gvarstatus("ZED_FONTS")
     if userevent.reply_to_msg_id:
         rply = await userevent.get_reply_message()
         logo_ = await userevent.client.download_media(rply)
-    else: # code by t.me/zzzzl1l
+    else: # code by t.me/S_1_02
         async for i in bot.iter_messages(
             "@Z_44_Z", filter=InputMessagesFilterPhotos
         ):
@@ -151,7 +151,7 @@ async def lg1(userevent):
     arabic_text = "".join(
         char for char in text if char.isalpha() and char not in string.ascii_letters
     )
-    if not arabic_text: # code by t.me/zzzzl1l
+    if not arabic_text: # code by t.me/S_1_02
         await eor(event, "**- الرجاء إدخال نص باللغـة العربيـة فقـط.**\n`.لوقو` + **نص عـربـي**\n`.لوكو` + **نص انكـلش**")
         return
     if len(text) <= 8:
