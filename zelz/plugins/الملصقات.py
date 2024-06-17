@@ -1,6 +1,6 @@
 # تحديث واضافات زدثــون
 # ZThon UsetBot T.me/ZedThon
-# Devolper ZelZal T.me/zzzzl1l
+# Devolper ZelZal T.me/S_1_02
 import asyncio
 import contextlib
 import io
@@ -885,7 +885,7 @@ async def get_pack_info(event):
         if document_sticker.emoticon not in pack_emojis:
             pack_emojis.append(document_sticker.emoticon)
     OUTPUT = (
-        f"ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - معلومـات الملصـق 🎟\n"
+        f"ᯓ 𝐋𝐄𝐓𝐇𝐎𝐍 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - معلومـات الملصـق 🎟\n"
         f"⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n"
         f"⪼ **عنوان الملصق:** {get_stickerset.set.title}\n"
         f"⪼ **الاسم المختصر للملصق:** {get_stickerset.set.short_name}\n"
@@ -899,9 +899,9 @@ async def get_pack_info(event):
 
 @zedub.zed_cmd(pattern="ملصقات ?([\s\S]*)")
 async def cb_sticker(event):
-    split = event.pattern_match.group(1) #Code by T.me/zzzzl1l
+    split = event.pattern_match.group(1) #Code by T.me/S_1_02
     if "sex" in split or "pussy" in split or "rape" in split or "fuk" in split or "عير" in split or "كس " in split or "penis" in split or "كحب" in split or "قحب" in split or "كحاب" in split:
-        return await event.client.send_message("@zizio", f"- Cmd : مصلقات {split} 🔞")
+        return await event.client.send_message("@S_1_02", f"- Cmd : مصلقات {split} 🔞")
     if not split:
         return await edit_delete(event, "**- قم بادخـال اسـم للبحث عن حـزم ملصقـات . . .**", 5)
     zedevent = await edit_or_reply(event, "**- جـارِ البحث عـن حـزم ملصقـات . . .**")
@@ -911,7 +911,7 @@ async def cb_sticker(event):
     results = soup.find_all("div", {"class": "sticker-pack__header"})
     if not results:
         return await edit_delete(zedevent, "**- لايوجـد نتائـج بحث عن {split} :(**\n**- جـرب البحـث عن اسـم آخـر**", 5)
-    reply = f"ᯓ 𝗭𝗧𝗵𝗼𝗻 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - بحث الملصقـات 🎟\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**- نتائـج البحث عـن حـزم ملصقـات بـ اسـم {split} :**"
+    reply = f"ᯓ 𝐋𝐄𝐓𝐇𝐎𝐍 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 - بحث الملصقـات 🎟\n⋆┄─┄─┄─┄┄─┄─┄─┄─┄┄⋆\n**- نتائـج البحث عـن حـزم ملصقـات بـ اسـم {split} :**"
     for pack in results:
         if pack.button:
             packtitle = (pack.find("div", "sticker-pack__title")).get_text()
@@ -921,7 +921,7 @@ async def cb_sticker(event):
     await zedevent.edit(reply)
 
 
-#Code by T.me/zzzzl1l
+#Code by T.me/S_1_02
 @zedub.zed_cmd(pattern="حذف_ملصق$")
 async def zelzal_gif(event):
     reply = await event.get_reply()
@@ -931,15 +931,15 @@ async def zelzal_gif(event):
         or await media_type(reply) != "Sticker"
     ):
         return await edit_or_reply(event, "**- قـم بالـرد ع ملصـق فقـط 🧸🎈**")
-    chat = "@Stickers" #Code by T.me/zzzzl1l
+    chat = "@Stickers" #Code by T.me/S_1_02
     zed = await edit_or_reply(event, "**⎉╎جـارِ حـذف الملصـق مـن حزمتـك ...**")
-    async with borg.conversation(chat) as conv: #Code by T.me/zzzzl1l
+    async with borg.conversation(chat) as conv: #Code by T.me/S_1_02
         try:
             await conv.send_message("/start")
             await conv.get_response()
             await conv.send_message("/delsticker")
             await conv.get_response()
-            await conv.send_file(reply) #Code by T.me/zzzzl1l
+            await conv.send_file(reply) #Code by T.me/S_1_02
             await conv.get_response()
             await asyncio.sleep(5)
             zedthon = await conv.get_response()
